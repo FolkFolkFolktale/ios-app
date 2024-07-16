@@ -12,6 +12,10 @@
 		064289662C44FE0900E2FDE6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064289652C44FE0900E2FDE6 /* ContentView.swift */; };
 		064289682C44FE0A00E2FDE6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 064289672C44FE0A00E2FDE6 /* Assets.xcassets */; };
 		0642896B2C44FE0A00E2FDE6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0642896A2C44FE0A00E2FDE6 /* Preview Assets.xcassets */; };
+		064289732C44FEAF00E2FDE6 /* makeStoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064289722C44FEAF00E2FDE6 /* makeStoryView.swift */; };
+		064289752C45001400E2FDE6 /* StoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064289742C45001400E2FDE6 /* StoryView.swift */; };
+		064289772C45002D00E2FDE6 /* makeStoryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 064289762C45002D00E2FDE6 /* makeStoryViewModel.swift */; };
+		0642897F2C45024500E2FDE6 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = 0642897E2C45024500E2FDE6 /* Alamofire */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -22,6 +26,9 @@
 		064289672C44FE0A00E2FDE6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0642896A2C44FE0A00E2FDE6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0642896C2C44FE0A00E2FDE6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		064289722C44FEAF00E2FDE6 /* makeStoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeStoryView.swift; sourceTree = "<group>"; };
+		064289742C45001400E2FDE6 /* StoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryView.swift; sourceTree = "<group>"; };
+		064289762C45002D00E2FDE6 /* makeStoryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = makeStoryViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +36,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0642897F2C45024500E2FDE6 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -57,9 +65,12 @@
 				064289612C44FE0900E2FDE6 /* e_robotApp.swift */,
 				064289632C44FE0900E2FDE6 /* e_robotDocument.swift */,
 				064289652C44FE0900E2FDE6 /* ContentView.swift */,
+				064289722C44FEAF00E2FDE6 /* makeStoryView.swift */,
 				064289672C44FE0A00E2FDE6 /* Assets.xcassets */,
 				0642896C2C44FE0A00E2FDE6 /* Info.plist */,
 				064289692C44FE0A00E2FDE6 /* Preview Content */,
+				064289742C45001400E2FDE6 /* StoryView.swift */,
+				064289762C45002D00E2FDE6 /* makeStoryViewModel.swift */,
 			);
 			path = "e-robot";
 			sourceTree = "<group>";
@@ -88,6 +99,9 @@
 			dependencies = (
 			);
 			name = "e-robot";
+			packageProductDependencies = (
+				0642897E2C45024500E2FDE6 /* Alamofire */,
+			);
 			productName = "e-robot";
 			productReference = 0642895E2C44FE0900E2FDE6 /* e-robot.app */;
 			productType = "com.apple.product-type.application";
@@ -116,6 +130,9 @@
 				Base,
 			);
 			mainGroup = 064289552C44FE0900E2FDE6;
+			packageReferences = (
+				0642897D2C45024500E2FDE6 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = 0642895F2C44FE0900E2FDE6 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -142,6 +159,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				064289772C45002D00E2FDE6 /* makeStoryViewModel.swift in Sources */,
+				064289752C45001400E2FDE6 /* StoryView.swift in Sources */,
+				064289732C44FEAF00E2FDE6 /* makeStoryView.swift in Sources */,
 				064289622C44FE0900E2FDE6 /* e_robotApp.swift in Sources */,
 				064289642C44FE0900E2FDE6 /* e_robotDocument.swift in Sources */,
 				064289662C44FE0900E2FDE6 /* ContentView.swift in Sources */,
@@ -352,6 +372,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0642897D2C45024500E2FDE6 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.9.1;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0642897E2C45024500E2FDE6 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0642897D2C45024500E2FDE6 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 064289562C44FE0900E2FDE6 /* Project object */;
 }

@@ -10,8 +10,8 @@ import SwiftUI
 @main
 struct e_robotApp: App {
     var body: some Scene {
-        DocumentGroup(newDocument: e_robotDocument()) { file in
-            ContentView(document: file.$document)
+        WindowGroup{
+            ContentView()
         }
     }
 }

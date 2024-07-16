@@ -8,13 +8,20 @@
 import SwiftUI
 
 struct ContentView: View {
-    @Binding var document: e_robotDocument
 
     var body: some View {
-        TextEditor(text: $document.text)
+        Text("이로봇")
+            .font(.system(size: 30))
+            .fontWeight(/*@START_MENU_TOKEN@*/.bold/*@END_MENU_TOKEN@*/)
+            .foregroundStyle(.purple)
+        Button{
+            
+        }label:{
+            Text("시작하기")
+        }
     }
 }
 
 #Preview {
-    ContentView(document: .constant(e_robotDocument()))
+    ContentView()
 }
